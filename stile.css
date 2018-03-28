@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: Consolas;
     color:#FCFCFC;
@@ -11,57 +15,68 @@ body {
 header {
     background-color: #333333;
     height: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin-bottom: 0px;
+    border:0;
+    margin: 0;
+    width:100%;
+    position: relative;
 }
 
-header::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: text-bottom;
+.subtitle{
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: 0;
+    margin: 0;
 }
 
-main {
+#bio{
+    padding-bottom:5%;
+}
+
+#portfolio{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+#curriculum{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+#contatti{
+    padding-top:5%;
+}
+
+.buttons{
+    vertical-align: text-top;
+}
+
+table{
     border: 0px;
     margin: 0px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding:0;
+    padding-left: 15%;
+    padding-right: 15%;
     height: 75%;
-    vertical-align: middle;
-}
-
-main::before{
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.buttons {
-    display: inline-block;
     vertical-align: middle;
 }
 
 footer {
     background-color: #333333;
     height: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 200;
 }
 
-footer::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: bottom;
-}
 
 
 a {
     margin: 0px;
-    width: 100px;
+    
     
     display: block;
 }
@@ -76,20 +91,31 @@ a:visited {
 }
 
 a:hover {
-    color: sandybrown;
-    font-weight: 600;
+    color: #E9B000;
+    font-weight: 500;
 }
 
 .toptitle{
     margin: 0px;
     border: 0px;
-    display: inline-block;
-    vertical-align: text-bottom;
+    display: inline;
+    font-size: 2.2em;
+    position: absolute;
+    bottom: 0;
 }
 
 .credits{
     margin: 0px;
     border: 0px;
-    display: inline-block;
-    vertical-align: bottom;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+}
+
+.text{
+    border: 0;
+    margin: 0;
+    padding-left: 5%;
+    vertical-align: text-top;
+    font-size: 1em;
 }

@@ -1,56 +1,95 @@
 body {
-    background-color: #aacce2;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 0px;
-    font-family: Calibri;
+    font-family: Consolas;
+    color:#FCFCFC;
+    background-color: #444444;
+    margin: 0px;
+    border: 0px;
+    height: 99.99%;
+    width: 100%;
 }
 
 header {
-    background-color: whitesmoke;
-    padding: 5%;
-    padding-left: 22%;
-    padding-bottom: 0px;
-    margin-left:-22%;
-    margin-right:-22%;
+    background-color: #333333;
+    height: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-bottom: 0px;
-    margin-top: 0px;
-    
 }
 
-a {
-    margin: 10%;
-    margin-left: 0px;
-    width: 15%;
-    min-width: 120px;
-    height: 4%;
-    min-height: 20px;
-    padding: 5px;
-    border: 1px black solid;
-    text-align: center;
+header::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: text-bottom;
+}
+
+main {
+    border: 0px;
+    margin: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 75%;
     vertical-align: middle;
+}
+
+main::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.buttons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #333333;
+    height: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+
+a {
+    margin: 0px;
+    width: 100px;
+    
     display: block;
-    overflow: inherit;
 }
 
 a:link {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: whitesmoke;
 }
 
 a:hover {
-    color: black;
+    color: sandybrown;
     font-weight: 600;
 }
 
-#bio {
-    margin-top: 5%;
+.toptitle{
+    margin: 0px;
+    border: 0px;
+    display: inline-block;
+    vertical-align: text-bottom;
 }
 
-#contatti {
-    margin-bottom: 5%;
+.credits{
+    margin: 0px;
+    border: 0px;
+    display: inline-block;
+    vertical-align: bottom;
 }
