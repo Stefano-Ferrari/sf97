@@ -10,6 +10,8 @@ body {
     border: 0px;
     height: 99.99%;
     width: 100%;
+    overflow-y: auto;
+    position: relative;
 }
 
 header {
@@ -30,6 +32,28 @@ header {
     font-size: 1.2em;
     border: 0;
     margin: 0;
+    margin-left: 15%;
+    height: 5%;
+}
+
+.flexbox{
+    display: flex;    
+    align-items: flex-start;
+    border: 0px;
+    margin: 0px;
+    height: 70%;
+}
+
+.buttons{
+    margin-left: 13%;
+    margin-right: 5%;
+}
+
+.textbox{
+    margin-left: 5%;
+    margin-right: 13%;
+    padding: 0px;
+    margin-bottom: 30%
 }
 
 #bio{
@@ -54,25 +78,16 @@ header {
     vertical-align: text-top;
 }
 
-table{
-    border: 0px;
-    margin: 0px;
-    padding:0;
-    padding-left: 15%;
-    padding-right: 15%;
-    height: 75%;
-    vertical-align: middle;
-}
-
 footer {
     background-color: #333333;
     height: 10%;
+    width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     font-weight: 200;
+    position: fixed;
+    bottom: 0px;
 }
-
-
 
 a {
     margin: 0px;
