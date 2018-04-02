@@ -33,27 +33,42 @@ header {
     border: 0;
     margin: 0;
     margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     height: 5%;
 }
 
 .flexbox{
     display: flex;    
     align-items: flex-start;
+    margin: auto;
     border: 0px;
     margin: 0px;
-    height: 70%;
+    height: 66%;
 }
 
 .buttons{
-    margin-left: 13%;
+    margin-left: 15%;
     margin-right: 5%;
 }
 
 .textbox{
     margin-left: 5%;
-    margin-right: 13%;
+    margin-right: 15%;
     padding: 0px;
-    margin-bottom: 30%
+    margin-bottom: 30%;
+}
+
+.photos{
+    
+    margin-left: 5%;
+    margin-right: 15%;
+    padding: 0px;
+    margin-bottom: 30%;
+}
+
+.works{
+    margin: 0.5em;
 }
 
 #bio{
