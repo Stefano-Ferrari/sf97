@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: Consolas;
     color:#FCFCFC;
@@ -11,57 +15,100 @@ body {
 header {
     background-color: #333333;
     height: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin-bottom: 0px;
+    border:0;
+    margin: 0;
+    width:100%;
+    position: relative;
 }
 
-header::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: text-bottom;
-}
-
-main {
+.flexbox{
+    display: flex;    
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
     border: 0px;
     margin: 0px;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 75%;
-    vertical-align: middle;
+    height: 68%;
 }
 
-main::before{
-    content: '';
-    display: inline-block;
+.subtitle{
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: 0;
+    margin-bottom: 10;
+    margin-left: 15%;
+    height: 10%;
+    flex 0 1 100%;
+    width: 100%;
+}
+
+.buttons{
+    margin-left: 15%;
+    margin-right: 5%;
+    flex 0 1;
     height: 100%;
-    vertical-align: middle;
+    width: 20%;
 }
 
-.buttons {
-    display: inline-block;
-    vertical-align: middle;
+.textbox{
+    margin-left: 5%;
+    margin-right: 15%;
+    padding: 0px;
+    height: 100%;
+    overflow-y: auto;
+    flex 0 1;
+    width: 40%;
+}
+
+.photos{
+    margin-left: 5%;
+    margin-right: 15%;
+    padding: 0px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.works{
+    margin: 0.5em;
+}
+
+#bio{
+    padding-bottom:5%;
+}
+
+#portfolio{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+#curriculum{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+#contatti{
+    padding-top:5%;
 }
 
 footer {
     background-color: #333333;
     height: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 200;
+    position: fixed;
+    bottom: 0px;
 }
-
-footer::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: bottom;
-}
-
 
 a {
     margin: 0px;
-    width: 100px;
+    
     
     display: block;
 }
@@ -76,20 +123,31 @@ a:visited {
 }
 
 a:hover {
-    color: sandybrown;
-    font-weight: 600;
+    color: #E9B000;
+    font-weight: 500;
 }
 
 .toptitle{
     margin: 0px;
     border: 0px;
-    display: inline-block;
-    vertical-align: text-bottom;
+    display: inline;
+    font-size: 2.2em;
+    position: absolute;
+    bottom: 0;
 }
 
 .credits{
     margin: 0px;
     border: 0px;
-    display: inline-block;
-    vertical-align: bottom;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+}
+
+.text{
+    border: 0;
+    margin: 0;
+    padding-left: 5%;
+    vertical-align: text-top;
+    font-size: 1em;
 }

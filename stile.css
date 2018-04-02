@@ -10,8 +10,6 @@ body {
     border: 0px;
     height: 99.99%;
     width: 100%;
-    overflow-y: auto;
-    position: relative;
 }
 
 header {
@@ -26,25 +24,23 @@ header {
     position: relative;
 }
 
+.flexbox{
+    display: flex;    
+    align-items: flex-start;
+    flex-direction: row;
+    margin: auto;
+    border: 0px;
+    margin: 0px;
+    height: 65%;
+}
+
 .subtitle{
     text-align: left;
     font-weight: 400;
     font-size: 1.2em;
     border: 0;
-    margin: 0;
     margin-left: 15%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height: 5%;
-}
-
-.flexbox{
-    display: flex;    
-    align-items: flex-start;
-    margin: auto;
-    border: 0px;
-    margin: 0px;
-    height: 66%;
+    height: 6%;
 }
 
 .buttons{
@@ -56,15 +52,16 @@ header {
     margin-left: 5%;
     margin-right: 15%;
     padding: 0px;
-    margin-bottom: 30%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .photos{
-    
     margin-left: 5%;
     margin-right: 15%;
     padding: 0px;
-    margin-bottom: 30%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .works{
@@ -87,10 +84,6 @@ header {
 
 #contatti{
     padding-top:5%;
-}
-
-.buttons{
-    vertical-align: text-top;
 }
 
 footer {
