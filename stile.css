@@ -110,23 +110,24 @@ footer {
 
 a {
     margin: 0px;
-    
-    
     display: block;
+    transition: all 0.3s ease-in-out
 }
 
 a:link {
     color: whitesmoke;
     text-decoration: none;
+    transition: all 0.3s ease-in-out
 }
 
 a:visited {
     color: whitesmoke;
+    transition: all 0.3s ease-in-out
 }
 
 a:hover {
     color: #E9B000;
-    font-weight: 500;
+    transition: all 0.15s ease-in-out
 }
 
 .toptitle{
@@ -135,7 +136,25 @@ a:hover {
     display: inline;
     font-size: 2.2em;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+}
+
+.toptitle:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0.05em;
+    width: 100%;
+    background-color: #E9B000;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.15s ease-in-out;
+}
+
+.toptitle:hover:after{
+    visibility: visible;
+    transform: scale(1);
 }
 
 .credits{
@@ -153,3 +172,46 @@ a:hover {
     vertical-align: text-top;
     font-size: 1em;
 }
+
+@keyframes glitchy {
+    0%   {transform: translate(-1px, 1px);}
+    25%  {transform: translate(-1px, -1px);}
+    50%  {transform: translate(1px, 1px);}
+    75%  {transform: translate(1px, -1px);}
+    100%  {transform: translate(-1px, 1px);}
+}
+
+#glitch {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1;
+}
+
+#glitch:before, #glitch:after {
+        content: 'report';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+#glitch:before {
+        color: #00ffff;
+        z-index: -1;
+    }
+
+#glitch:after {
+        color: #ff00ff;
+        z-index: -2;
+    }
+    
+#glitch:hover:before {
+            animation: glitchy 0.3s ease 0.3s infinite;
+        }
+        
+#glitch:hover:after {
+            animation: glitchy 0.3s ease infinite reverse;
+        }
